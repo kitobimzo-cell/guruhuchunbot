@@ -35,7 +35,7 @@ def reply_with_ai(message):
     except Exception as e:
         print(f"Xatolik: {e}")
 
-if name == "main":
+if __name__ == "main":
     threading.Thread(target=run_flask, daemon=True).start()
     if bot:
         print("Bot ishladi...")
