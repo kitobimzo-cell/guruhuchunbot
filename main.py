@@ -4,7 +4,7 @@ from flask import Flask
 import telebot
 import google.generativeai as genai
 
-app = Flask(name)
+app = Flask(__name__)
 
 @app.route('/')
 def home():
